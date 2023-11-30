@@ -7056,7 +7056,7 @@ via polling.
   it is not properly configured.  Each queried object should be available in
   `result.status`.  The client should check to make sure that all objects are
   received before proceeding.
-- Inspect `webhooks.ready`.  If the value is not `ready` the printer
+- Inspect `webhooks.state`.  If the value is not `ready` the printer
   is not available.  `webhooks.message` contains a message pertaining
   to the current state.
 - If the printer is ready, inspect `print_stats.state`.  It may be one
